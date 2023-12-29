@@ -7,6 +7,7 @@ import { increment1, increment2, makepause ,restart} from '../redux/actions';
 import React, { useState } from 'react';
 import store from '../redux/store';
 import './counter.css'
+import celebration from '../assets/celebration';
 
 // components/Counter.js
 
@@ -56,11 +57,13 @@ const [winner,setWinner] = useState();
       }else if(cpt1-cpt2>=30){
         setwon(true)
         setWinner('Player One won!')
+        celebration()
 
         new Audio(applause).play();
         
       }else if(cpt2-cpt1>=30){
         setwon(true)
+        celebration()
         setWinner('Player Two won!')
         new Audio(applause).play();
       }
