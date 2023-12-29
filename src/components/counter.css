@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+h1{
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(121deg, rgba(0, 20, 74, 0.919) 0%, rgba(16, 56, 0, 0.902) 100%);
+
+}
+button{
+    width: 20%;
+}
+
+.container{
+    padding: 50px;
+    text-align: center;
+}
+
+.paused{
+    background-color: #4d5154;
+}
+
+
